@@ -21,7 +21,7 @@ class Calculator:
                 if rental.expenses_ask() == 'return': continue
                 if rental.down_ask() == 'return': continue
                 if rental.calculate() == 'error': continue
-                if rental.income != {} and rental.expenses != {} and rental.down_payment != {}:
+                if rental.income != {} and rental.down_payment != {}:
                     self.properties.append(rental)
                     print(f'Property "{rental.name}" added to your list of properties.')
                 else: print('There was an error in one of your submissions. Please try again. ')
